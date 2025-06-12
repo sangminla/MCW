@@ -1,0 +1,69 @@
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+.table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 14px 12px;
+  border: 1px solid #eee;
+  text-align: center;
+  font-size: 15px;
+}
+
+.table th {
+  background-color: #f6f6f6;
+  font-weight: bold;
+  color: #333;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.deleteBtn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.deleteBtn:hover {
+  background-color: #c0392b;
+}
+
+.deleteBtn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

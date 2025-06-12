@@ -1,0 +1,146 @@
+/* src/styles/Home.module.css */
+
+.container {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-color: #003366;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLeft {
+  display: flex;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.navRight {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navLink {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ffcc00;
+}
+
+.logoutButton {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #fff;
+  color: #003366;
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerText {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.4;
+  max-width: 1100px;
+  white-space: normal;
+  word-break: keep-all;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 40px;
+  padding: 60px 40px;
+}
+
+.card {
+  width: 320px;
+  padding: 30px;
+  background-color: #f0f8ff;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #003366;
+}
+
+.cardDesc {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  text-align: center;
+  margin-top: 4px;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .cardDesc {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,115 @@
+/* src/styles/StudyPage.module.css */
+
+.container {
+  max-width: 880px;
+  margin: 60px auto;
+  padding: 40px 50px;
+  background: #f0f4f8;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading::before {
+  content: '📐';
+  margin-right: 10px;
+}
+
+.selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.selector label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+}
+
+.selector select {
+  width: 160px;
+  height: 48px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  transition: border 0.2s ease;
+}
+
+.selector select:focus {
+  outline: none;
+  border: 1.5px solid #4f8ef7;
+}
+
+.selector button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #3a86ff, #4361ee);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.selector button:hover {
+  background: linear-gradient(to right, #4361ee, #3a86ff);
+  transform: translateY(-2px);
+}
+
+.resultBox {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.8;
+  font-size: 17px;
+  color: #2b2d42;
+  margin-top: 20px;
+}
+
+.resultBox h3 {
+  font-size: 22px;
+  color: #1c1c1c;
+  font-weight: 700;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+.resultBox strong {
+  color: #005eff;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  border-left: 4px solid #a1c4fd;
+  padding-left: 12px;
+  background: #f3f9ff;
+}

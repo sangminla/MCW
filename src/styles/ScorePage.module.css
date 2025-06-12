@@ -1,0 +1,55 @@
+/* src/styles/ScorePage.module.css */
+
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.loading,
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}
+
+.resultList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resultItem {
+  background-color: #f8fbff;
+  border: 1px solid #e0eafc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.resultItem p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.questionList {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.questionItem {
+  margin-bottom: 10px;
+  font-size: 15px;
+}

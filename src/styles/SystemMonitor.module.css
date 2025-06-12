@@ -1,0 +1,36 @@
+.container {
+  padding: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f8f9fa;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c87c9;
+}
