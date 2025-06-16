@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+MCW: 수학 학습 추천 웹사이트
+=============================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+학생 개개인의 학년과 실력을 바탕으로 퀴즈, 교재 추천, 공부 방법 추천 기능을 제공하며,
+관리자 모드에서 모든 데이터를 관리할 수 있는 수학 맞춤형 학습 플랫폼입니다.
 
-## Available Scripts
+---------------------------------------------
+[주요 기능]
 
-In the project directory, you can run:
+- 사용자 ID 기반 로그인 / 회원가입
+- 학년·점수 기반 퀴즈 문제 풀이 (Gemini AI 사용)
+- 퀴즈 성적 저장 및 날짜별 조회
+- 학습 방법(Gemini AI 사용) & 교재 추천
+- 관리자 기능:
+  - 회원 관리
+  - 퀴즈/교재 목록 관리
+  - 성적 분석 및 시스템 모니터링
 
-### `npm start`
+---------------------------------------------
+[프로젝트 실행 방법]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. GitHub에서 프로젝트 클론하기
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   git clone https://github.com/sangminla/MCW.git
+   cd MCW
 
-### `npm test`
+2. 필요한 라이브러리 설치
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   npm install
 
-### `npm run build`
+3. .env 파일 생성 (루트 디렉토리)
+ 러닝x에 .env 파일을 같이 첨부해둠 그대로 복붙해서 사용면됨
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   REACT_APP_SUPABASE_URL=당신의_SUPABASE_URL
+   REACT_APP_SUPABASE_ANON_KEY=당신의_SUPABASE_ANON_KEY
+   REACT_APP_GEMINI_API_KEY=당신의_GEMINI_API_KEY
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Supabase 키는 https://supabase.io 에서 프로젝트 생성 후 확인
+   - Gemini 키는 https://makersuite.google.com/app/apikey 에서 발급 가능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. 프로젝트 실행
 
-### `npm run eject`
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   → 브라우저에서 http://localhost:3000 자동 실행
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---------------------------------------------
+[프로젝트 폴더 구조]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+MCW/
+├── public/
+├── src/
+│   ├── components/       → 주요 컴포넌트
+│   ├── styles/           → CSS 모듈
+│   ├── utils/            → Gemini 연동 함수
+│   ├── supabaseClient.js → Supabase 연결
+│   └── App.js            → 라우팅
+├── .env                  → 환경변수
+└── package.json
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---------------------------------------------
+[사용 기술]
 
-## Learn More
+- React.js
+- Supabase (백엔드, 인증, 데이터 저장)
+- Gemini API (문제 및 학습 방법 생성)
+- CSS Modules
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---------------------------------------------
+[제작자]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 영남대학교 수학과 & 컴퓨터공학과 복수전공
+- GitHub: https://github.com/sangminla
